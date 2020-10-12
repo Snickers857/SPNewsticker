@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="1e6ddbfd-7fe4-42c8-b740-697817d5516a" 
+        solutionId="1e6ddbfd-7fe4-42c8-b740-697817d5516a" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SPNewsticker"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="236fab0d-127f-4d7b-b64d-d1a270c68935" />
+  </features>
+</package>
