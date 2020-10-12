@@ -43,10 +43,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Content\li-scroller.css" />
+    <Content Include="Newsticker\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Newsticker1.aspx" />
+    <Content Include="Scripts\Newsticker.js" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery.li-scroller.1.0.js" />
+    <None Include="Newsticker\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c9c9011f-7987-41a5-bb96-a52975d884d6}</SharePointProjectItemId>
+    </None>
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{21d22efd-b2fe-4745-b70a-aa4feb5f598c}</SharePointProjectItemId>
