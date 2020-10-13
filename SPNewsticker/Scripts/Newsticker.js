@@ -3,6 +3,7 @@
 var hostUrl = "";
 var allNews;
 var context = SP.ClientContext.get_current();
+var tickerSpeed = "";
 
 if (document.URL.indexOf('?') != -1) {
         var params = document.URL.split('?')[1].split('&');
@@ -22,6 +23,8 @@ if (document.URL.indexOf('?') != -1) {
 
 
 $(document).ready(function () {
+
+    tickerSpeed = decodeURIComponent(getQueryStringParamenter("TickerSpeed"));
     var hostweburl = decodeURIComponent(getQueryStringParamenter("SPHostUrl"));
     var hostcontext = new SP.AppContextSite(context, hostweburl);
     var web = hostcontext.get_web();
@@ -51,7 +54,7 @@ function onQuerySucceeded() {
         newsHTML = newsHTML + "<li><span> +++ " + announcment.get_item("Title") + " : </span>" + announcment.get_item("Nachricht") + "</li>";
     }
     $("#ticker01")[0].innerHTML = newsHTML;
-    $("ul#ticker01").liScroll({ travelocity: "0.15" });
+    $("ul#ticker01").liScroll({ travelocity: + tickerSpeed });
    
 };
 

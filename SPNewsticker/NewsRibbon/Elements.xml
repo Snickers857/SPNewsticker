@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="3cc90d69-2ce4-4fc9-870c-e2c405ddabd1.NewsRibbon"
+                RegistrationType="List"
+                RegistrationId="{$ListId:Lists/News;}"
+                Location="CommandUI.Ribbon"
+                Sequence="10001"
+                Title="&apos;NewsRibbon&apos;-Aktion aufrufen">
+    <CommandUIExtension>
+      <!-- 
+      Aktualisieren Sie die Benutzeroberflächendefinitionen unten mit den Steuerelementen und Befehlsaktionen,
+      die Sie zum Aktivieren der benutzerdefinierten Aktion benötigen.
+      -->
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.List.Actions.Controls._children">
+          <Button Id="Ribbon.List.Actions.NewsRibbonButton"
+                  Alt="Zum Newsticker"
+                  Sequence="100"
+                  Command="Invoke_NewsRibbonButtonRequest"
+                  LabelText="Zum Newsticker"
+                  TemplateAlias="o1"
+                  Image32by32="_layouts/15/images/placeholder32x32.png"
+                  Image16by16="_layouts/15/images/placeholder16x16.png" />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler Command="Invoke_NewsRibbonButtonRequest"
+                          CommandAction="~appWebUrl/Pages/Default.aspx?{StandardTokens}&amp;SPListItemId={SelectedItemId}&amp;SPListId={SelectedListId}"/>
+      </CommandUIHandlers>
+    </CommandUIExtension >
+  </CustomAction>
+</Elements>

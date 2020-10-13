@@ -15,6 +15,7 @@
     <script type="text/javascript" src="/_layouts/15/sp.js"></script>
 
     <script src="../Scripts/jquery.li-scroller.1.0.js"></script>
+    <link href="../Content/App.css" rel="stylesheet" />
     <script src="../Scripts/Newsticker.js"></script>
     <link href="../Content/li-scroller.css" rel="stylesheet" />
     <script type="text/javascript">
