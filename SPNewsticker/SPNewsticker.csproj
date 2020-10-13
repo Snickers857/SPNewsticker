@@ -43,6 +43,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Content\li-scroller.css" />
+    <Content Include="Images\ok.png" />
     <Content Include="NewsRibbon\Elements.xml">
       <OpcRelationship>feature-elementmanifest</OpcRelationship>
     </Content>
